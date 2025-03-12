@@ -17,10 +17,17 @@ public class StudentData {
             System.out.println("3. Exit");
             System.out.print("Enter your choice: ");
 
+            if (!scanner.hasNextInt()) {
+                System.out.println("Invalid entry. Please enter a valid option (1, 2, or 3).");
+                scanner.next(); // Clear invalid input
+                continue;
+            }
+
             int choice = scanner.nextInt();
             scanner.nextLine();
 
             StudentSearch searchMethod = null;
+
             switch (choice) {
                 case 1:
                     searchMethod = StudentSearchFactory.getSearchMethod("admission");
@@ -36,7 +43,7 @@ public class StudentData {
                     System.out.println("Exiting program.");
                     return;
                 default:
-                    System.out.println("Invalid choice. Please try again.");
+                    System.out.println("Invalid choice. Please enter a valid option (1, 2, or 3).");
             }
         }
     }
