@@ -1,4 +1,4 @@
-package org.example;
+package org.example.FactoryPattern;
 
 import org.w3c.dom.css.CSS2Properties;
 

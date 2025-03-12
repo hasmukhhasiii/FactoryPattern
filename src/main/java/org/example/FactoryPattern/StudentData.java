@@ -1,4 +1,4 @@
-package org.example;
+package org.example.FactoryPattern;
 
 
 import java.util.Scanner;

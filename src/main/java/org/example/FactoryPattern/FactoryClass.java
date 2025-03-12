@@ -1,4 +1,4 @@
-package org.example;
+package org.example.FactoryPattern;
 
 // Factory class to create StudentSearch objects
 class StudentSearchFactory {
